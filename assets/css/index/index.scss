@@ -64,16 +64,17 @@ nav {
     }
 
     .nav-ul {
-        width: 20em;
-
+        width: 23em;
+        
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-
+       
         list-style: none;
 
         li {
+           
             a {
                 color: white;
                 text-decoration: none;
