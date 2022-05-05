@@ -7,6 +7,12 @@
   font-family: 'Roboto' sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 body {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -497,7 +503,7 @@ nav .nav-ul li a:hover {
 }
 
 .services-section .services-container .time {
-  background: #777777;
+  background: #8f8f8f;
   display: inline-block;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -544,5 +550,204 @@ nav .nav-ul li a:hover {
   margin: 1em 1em 0 1em;
   padding: 1em;
   z-index: 15;
+}
+
+.resume-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resume-container .resume-title {
+  margin-bottom: 6%;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.resume-container .education-container {
+  background-color: #323232;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: .6px solid #CCA33D;
+  width: 60%;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resume-container .education-container .education-container-title {
+  color: #CCA33D;
+  padding-left: 2%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.resume-container .education-container .education-element {
+  width: 100%;
+  border-bottom: 0.6px solid gray;
+}
+
+.resume-container .education-container .education-element .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.resume-container .education-container .education-element .title-container svg {
+  width: 25px;
+  height: 30px;
+}
+
+.resume-container .education-container .education-element .title-container .title {
+  padding-left: 2%;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.resume-container .education-container .education-element .description {
+  padding-left: 5%;
+  font-weight: 400;
+  font-size: 1em;
+  color: #666;
+}
+
+.resume-container .level-of-knowledge-container {
+  padding-bottom: 2%;
+  width: 60%;
+  padding-left: 2%;
+  background-color: #323232;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resume-container .level-of-knowledge-container .level-of-knowledge-container-title {
+  color: #CCA33D;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.resume-container .level-of-knowledge-container .level-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar {
+  width: 100%;
+  font-size: .85em;
+  background-color: #252525;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .skill-level {
+  background-color: #CCA33D;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .java {
+  width: 70%;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .html_css {
+  width: 85%;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .javascript {
+  width: 50%;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .sql {
+  width: 60%;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .php {
+  width: 40%;
 }
 /*# sourceMappingURL=index.css.map */

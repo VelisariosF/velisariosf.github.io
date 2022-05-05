@@ -1,0 +1,2 @@
+1) after creating every page add
+ nav bar links

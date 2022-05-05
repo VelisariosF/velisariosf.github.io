@@ -3,9 +3,16 @@
   
  
   }*/
-  *{
-      font-family: 'Roboto' sans-serif;
+* {
+    font-family: 'Roboto' sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    transition: 0.3s;
   }
+
 body {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -106,14 +113,14 @@ nav {
 
 .social-networks {
 
- 
+
     padding: 3%;
     margin-top: 2%;
 
 
 
     .social-container {
-     
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -199,12 +206,12 @@ nav {
     .main-title {
         font-weight: 700;
         font-size: 2em;
-        
+
     }
 
     .bio-container {
 
-      
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -299,9 +306,9 @@ nav {
 
 .services-section {
 
- margin-right: 10em;
- margin-left: 10em;
- margin-top: 10%;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-top: 10%;
     display: grid;
     grid-template-areas: "header"
         "content"
@@ -498,12 +505,14 @@ nav {
         }
 
         .time {
-            background: #777777;
+            background: rgb(143, 143, 143);
+
             display: inline-block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 8px;
-            svg{
+
+            svg {
                 width: 48px;
                 height: 48px;
             }
@@ -515,7 +524,7 @@ nav {
             margin: 1em 0 0 0;
             padding: 1em;
             background: rgb(254, 254, 254);
-           border-radius: 10px;
+            border-radius: 10px;
             -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
             -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
@@ -526,7 +535,7 @@ nav {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-               
+
 
             }
         }
@@ -541,4 +550,169 @@ nav {
 
     }
 
+}
+
+
+
+// resume page styling
+
+.resume-container {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .resume-title {
+
+        margin-bottom: 6%;
+        font-weight: 700;
+        font-size: 2em;
+
+    }
+
+    .education-container {
+        background-color: rgb(50, 50, 50);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        border-left: .6px solid #CCA33D;
+        width: 60%;
+
+        margin-bottom: 10%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .education-container-title {
+
+            color: #CCA33D;
+            padding-left: 2%;
+
+
+            width: max-content;
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+
+        .education-element {
+
+            width: 100%;
+            border-bottom: 0.6px solid gray;
+
+            .title-container {
+
+                display: flex;
+                flex-direction: row;
+
+                svg {
+
+                    width: 25px;
+                    height: 30px;
+                }
+
+                .title {
+
+                    padding-left: 2%;
+                    font-weight: 400;
+                    font-size: 1.3em;
+                }
+
+            }
+
+            .description {
+                padding-left: 5%;
+                font-weight: 400;
+                font-size: 1em;
+                color: #666;
+            }
+        }
+
+    }
+
+    .level-of-knowledge-container {
+        padding-bottom: 2%;
+        width: 60%;
+        padding-left: 2%;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .level-of-knowledge-container-title {
+            color: #CCA33D;
+
+
+            width: max-content;
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+
+        .level-container {
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .skills-container {
+                width: 50%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                .skill-bar-container {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    .bar {
+                        width: 100%;
+                        font-size: .85em;
+                        background-color: rgb(37, 37, 37);
+
+                        //   background-color: #0e683e;
+                        .skill-level {
+
+                            background-color: #CCA33D;
+
+
+                        }
+
+                        .java {
+                            width: 70%;
+                        }
+
+                        .html_css {
+                            width: 85%;
+                        }
+
+                        .javascript {
+                            width: 50%;
+                        }
+
+                        .sql {
+                            width: 60%;
+                        }
+
+                        .php {
+                            width: 40%;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
 }
