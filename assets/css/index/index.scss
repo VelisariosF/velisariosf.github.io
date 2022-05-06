@@ -717,3 +717,168 @@ nav {
         }
     }
 }
+
+
+.portofolio-page-container{
+    margin-right: 10em;
+    margin-left: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .portofolio-main-title{
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    .projects-section{
+        width: 60%;
+
+        margin-bottom: 10%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .projects-section-title{
+
+            color: #CCA33D;
+           
+            //margin-left: 1%;    
+
+            width: max-content;
+            font-weight: 600;
+            font-size: 1.5em;
+
+           
+        }
+
+        .projects-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .row{
+              
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .project-element{
+                  
+                    border-radius: 10px;
+                    margin-right: 1%;
+                //    margin-left: 1%;
+                    margin-bottom: 2%;
+                    width: 15em;
+                    height: 15em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  //  cursor: pointer;
+
+
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                //    background-position: 30% ;
+                    transition: transform .2s; /* Animation */
+                   
+
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+                    .project-element-description{
+                        
+                       
+                        opacity: 0;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            -webkit-transition:  color 0.3s ease-out;
+                            &:hover{
+
+                                color: #CCA33D;
+                            }
+                          
+                        }
+                    }
+                  
+                    &:hover{
+                        .project-element-description{
+                        
+                       
+                            opacity: 1;
+                        }
+                        transform: scale(1.15);
+
+                    }
+
+
+                }
+
+                .tenzies{
+                    background-image: url("/assets/images/portofolio_projects/tenzies.png");
+                  
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/tenzies.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30% ;
+                       
+                    }
+                }
+
+                .stop_watch{
+                    background-image: url("/assets/images/portofolio_projects/stop_watch.png");
+                  
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/stop_watch.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30% ;
+                     
+                    }
+                }
+
+                .sudoku{
+                    background-image: url("/assets/images/portofolio_projects/sudoku.png");
+                    background-size: cover;
+                   
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/sudoku.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30% ;
+                     
+                    }
+                }
+
+                .movie_freaks{
+                    background-image: url("/assets/images/portofolio_projects/movie_freaks.png");
+                  
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/movie_freaks.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30% ;
+                       
+                    }
+                }
+
+                .achs_site{
+                    background-image: url("/assets/images/portofolio_projects/achs_web_site.png");
+                   
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/achs_web_site.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30% ;
+                      
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -750,4 +750,196 @@ nav .nav-ul li a:hover {
 .resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .php {
   width: 40%;
 }
+
+.portofolio-page-container {
+  margin-right: 10em;
+  margin-left: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portofolio-page-container .portofolio-main-title {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.portofolio-page-container .projects-section {
+  width: 60%;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.portofolio-page-container .projects-section .projects-section-title {
+  color: #CCA33D;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.portofolio-page-container .projects-section .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portofolio-page-container .projects-section .projects-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element {
+  border-radius: 10px;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  width: 15em;
+  height: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element .project-element-description {
+  opacity: 0;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element .project-element-description a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s ease-out;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element .project-element-description a:hover {
+  color: #CCA33D;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.portofolio-page-container .projects-section .projects-container .row .project-element:hover .project-element-description {
+  opacity: 1;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .tenzies {
+  background-image: url("/assets/images/portofolio_projects/tenzies.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .tenzies:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/tenzies.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/tenzies.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .stop_watch {
+  background-image: url("/assets/images/portofolio_projects/stop_watch.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .stop_watch:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/stop_watch.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/stop_watch.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .sudoku {
+  background-image: url("/assets/images/portofolio_projects/sudoku.png");
+  background-size: cover;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .sudoku:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/sudoku.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/sudoku.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .movie_freaks {
+  background-image: url("/assets/images/portofolio_projects/movie_freaks.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .movie_freaks:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/movie_freaks.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/movie_freaks.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .achs_site {
+  background-image: url("/assets/images/portofolio_projects/achs_web_site.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .achs_site:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/achs_web_site.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/achs_web_site.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
 /*# sourceMappingURL=index.css.map */
