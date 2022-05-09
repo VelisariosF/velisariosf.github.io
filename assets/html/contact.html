@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Contact</title>
 </head>
+
 <body style="background-image: none; background-color: rgb(37, 37, 37);">
     <header>
         <nav>
@@ -31,36 +32,188 @@
             </ul>
         </nav>
     </header>
-    <h1>Contact</h1>
+    <section id="contact_form" class="contact-section">
+
+        <h1 class="contact-section-main-title">Get in touch</h1>
+
+
+        <div class="contact-section-container">
+            <div class="contact-container">
+                <h2 class="contact-container-title">Message me</h2>
+                <form class="contact-form-container" action="https://formsubmit.co//info@achillionsecurity.gr"
+                    method="POST">
+                    <div class="row row_1">
+                        <div class="form-attribute form-fname">
+                            <input class="form-input" type="text" id="fname" name="firstname" placeholder="first name..">
+                        </div>
+
+                        <div class="form-attribute form-lname">
+                            <input class="form-input" type="text" id="lname" name="lastname" placeholder="last name..">
+                        </div>
+                    </div>
+
+
+                    <div class="row row_2">
+                        <div class="form-attribute form-email">
+                            <input class="form-input" type="email" id="lname" name="emailAdr" placeholder="email.."
+                                required>
+                        </div>
+                        <div class="form-attribute form-phone">
+                            <input class="form-input" type="tel" id="lphone" name="phoneNum" placeholder="phone number.."
+                                pattern="69[0-9]{8}" required>
+                        </div>
+                    </div>
 
 
 
-       
-<footer class="social-networks">
-        
-    <div class="social-container"> 
-        <a  href="#" class="social-rectangle">
-            <i class="fa fa-facebook"></i>
-        </a>
-     
-        
-        <a  href="#" class="social-rectangle">
-            <i class="fa fa-twitter"></i>
-        </a>
+                    <div class="row row_3">
 
-        <a  href="#" target="_blank" class="social-rectangle">
-            <i class="fa fa-instagram"></i>
-        </a>
+                        <div class="form-attribute form-subject">
+                            <textarea rows="5" class="form-input-subject" id="subject" name="subject"
+                                placeholder="Your message.." style="height:200px"></textarea>
+                        </div>
 
-        <a  href="#" target="_blank" class="social-rectangle">
-            <i class="fa fa-linkedin"></i>
-        </a>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/html/thank_you.html">
+                       
+                    </div>
 
-        <a  href="#" target="_blank" class="social-rectangle">
-            <i class="fa fa-github"></i>
-        </a>
+                    <div class="form-submit">
+                        <input class="input-submit" type="submit" value="Επικοινωνία" name="sendEmail">
+                    </div>
 
-    </div>
-</footer>
+
+
+
+                </form>
+            </div>
+
+
+
+
+
+            <div class="contact-info-container">
+                <h2 class="contact-info-container-title">Contact Info</h2>
+                <div class="contact-form-elements-container">
+                    <div class="row">
+                        <div class="contact-form-element">
+                            <svg id="SvgjsSvg1001" width="28" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                                <defs id="SvgjsDefs1002"></defs>
+                                <g id="SvgjsG1008"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        fill="none" viewBox="0 0 15 15">
+                                        <path fill="#caa33d" fill-rule="evenodd"
+                                            d="M7.5 0.875C5.49797 0.875 3.875 2.49797 3.875 4.5C3.875 6.15288 4.98124 7.54738 6.49373 7.98351C5.2997 8.12901 4.27557 8.55134 3.50407 9.31167C2.52216 10.2794 2.02502 11.72 2.02502 13.5999C2.02502 13.8623 2.23769 14.0749 2.50002 14.0749C2.76236 14.0749 2.97502 13.8623 2.97502 13.5999C2.97502 11.8799 3.42786 10.7206 4.17091 9.9883C4.91536 9.25463 6.02674 8.87499 7.49995 8.87499C8.97317 8.87499 10.0846 9.25463 10.8291 9.98831C11.5721 10.7206 12.025 11.8799 12.025 13.5999C12.025 13.8623 12.2376 14.0749 12.5 14.0749C12.7623 14.075 12.975 13.8623 12.975 13.6C12.975 11.72 12.4778 10.2794 11.4959 9.31166C10.7244 8.55135 9.70025 8.12903 8.50625 7.98352C10.0187 7.5474 11.125 6.15289 11.125 4.5C11.125 2.49797 9.50203 0.875 7.5 0.875ZM4.825 4.5C4.825 3.02264 6.02264 1.825 7.5 1.825C8.97736 1.825 10.175 3.02264 10.175 4.5C10.175 5.97736 8.97736 7.175 7.5 7.175C6.02264 7.175 4.825 5.97736 4.825 4.5Z"
+                                            clip-rule="evenodd" class="colorcurrentColor svgShape"></path>
+                                    </svg></g>
+                            </svg>
+                            <div class="text-container">
+                                <h4 class="title">Name</h4>
+                                <p class="description">Velisarios Fafoutis</p>
+                            </div>
+                        </div>
+                        <div class="contact-form-element">
+                            <svg id="SvgjsSvg1022" width="28" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                                <defs id="SvgjsDefs1023"></defs>
+                                <g id="SvgjsG1024"><svg xmlns="http://www.w3.org/2000/svg"
+                                        enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="28" height="28">
+                                        <path d="M248.849,439.851c1.57,2.423,4.267,3.883,7.151,3.883s5.581-1.459,7.151-3.883l110.686-170.3
+                            c1.451-2.005,35.763-49.937,35.763-115.951C409.6,68.907,340.693,0,256,0S102.4,68.907,102.4,153.6
+                            c0,57.771,33.971,113.109,35.516,115.584L248.849,439.851z M256,17.067c75.281,0,136.533,61.252,136.533,136.533
+                            c0,60.279-32.179,105.472-32.759,106.283L256,419.541L152.32,260.028c-0.333-0.529-32.853-53.47-32.853-106.428
+                            C119.467,78.319,180.719,17.067,256,17.067z" fill="#caa33d" class="color000 svgShape"></path>
+                                        <path
+                                            d="M503.467 401.067c4.719 0 8.533-3.823 8.533-8.533v-25.6c0-32.939-26.803-59.733-59.733-59.733-4.719 0-8.533 3.823-8.533 8.533v82.492L396.8 460.8h-52.156l-17.067-51.2h90.556c4.719 0 8.533-3.823 8.533-8.533 0-4.71-3.814-8.533-8.533-8.533h-102.4c-2.739 0-5.316 1.314-6.929 3.55-1.596 2.219-2.039 5.077-1.161 7.68l19.004 57.037H141.807l25.6-51.2h28.86c4.71 0 8.533-3.823 8.533-8.533 0-4.71-3.823-8.533-8.533-8.533h-102.4c-4.71 0-8.533 3.823-8.533 8.533 0 4.71 3.823 8.533 8.533 8.533h54.46l-24.448 48.896-78.037-31.223c-4.403-1.749-9.344.384-11.102 4.753-1.749 4.386.384 9.344 4.753 11.102l76.723 30.686-10.556 21.12H59.733c-23.526 0-42.667-19.14-42.667-42.667 0-23.526 19.14-42.667 42.667-42.667 2.261 0 4.437-.896 6.033-2.5 1.604-1.596 2.5-3.772 2.5-6.033l-.009-85.333c0-4.71-3.823-8.533-8.533-8.533C26.795 307.2 0 333.995 0 366.933v25.6c0 4.71 3.823 8.533 8.533 8.533s8.533-3.823 8.533-8.533v-25.6c0-20.608 14.677-37.845 34.125-41.805l.009 68.011C22.289 397.295 0 422.221 0 452.267 0 485.205 26.795 512 59.733 512h290.108.026.026 102.374c32.93 0 59.733-26.795 59.733-59.733 0-30.046-22.289-54.972-51.2-59.128v-68.011c19.447 3.959 34.133 21.197 34.133 41.805v25.6C494.933 397.244 498.748 401.067 503.467 401.067zM124.74 494.933l8.533-17.067h199.066l5.692 17.067H124.74zM494.933 452.267c0 23.526-19.14 42.667-42.667 42.667h-96.247l-5.692-17.067h119.006c4.719 0 8.533-3.823 8.533-8.533 0-4.71-3.814-8.533-8.533-8.533h-51.2l38.101-50.799C477.875 412.041 494.933 430.097 494.933 452.267zM256 221.867c37.641 0 68.267-30.626 68.267-68.267 0-37.641-30.626-68.267-68.267-68.267-37.641 0-68.267 30.626-68.267 68.267C187.733 191.241 218.359 221.867 256 221.867zM256 102.4c28.237 0 51.2 22.963 51.2 51.2 0 28.237-22.963 51.2-51.2 51.2s-51.2-22.963-51.2-51.2C204.8 125.363 227.763 102.4 256 102.4z"
+                                            fill="#caa33d" class="color000 svgShape"></path>
+                                    </svg></g>
+                            </svg>
+                            <div class="text-container">
+                                <h4 class="title">Location</h4>
+                                <p class="description">Thessaloniki, Greece</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-form-element">
+                            <svg id="SvgjsSvg1017" width="28" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                                <defs id="SvgjsDefs1018"></defs>
+                                <g id="SvgjsG1019"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        viewBox="0 0 64 64">
+                                        <path fill="#caa33d"
+                                            d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z"
+                                            class="colorcurrentColor svgShape"></path>
+                                    </svg></g>
+                            </svg>
+                            <div class="text-container">
+                                <h4 class="title">Github</h4>
+                                <p class="description">VelisariosF</p>
+                            </div>
+                        </div>
+                        <div class="contact-form-element">
+                            <svg id="SvgjsSvg1011" width="28" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                                <defs id="SvgjsDefs1012"></defs>
+                                <g id="SvgjsG1013"><svg xmlns="http://www.w3.org/2000/svg"
+                                        enable-background="new 0 0 330.001 330.001" viewBox="0 0 330.001 330.001"
+                                        width="28" height="28">
+                                        <path
+                                            d="M173.871,177.097c-2.641,1.936-5.756,2.903-8.87,2.903c-3.116,0-6.23-0.967-8.871-2.903L30,84.602
+                            L0.001,62.603L0,275.001c0.001,8.284,6.716,15,15,15L315.001,290c8.285,0,15-6.716,15-14.999V62.602l-30.001,22L173.871,177.097z"
+                                            fill="#caa33d" class="color000 svgShape"></path>
+                                        <polygon points="165.001 146.4 310.087 40.001 19.911 40" fill="#caa33d"
+                                            class="color000 svgShape"></polygon>
+                                    </svg></g>
+                            </svg>
+                            <div class="text-container">
+                                <h4 class="title">Email Me</h4>
+                                <p class="description">velisarios1234@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                 
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+    <footer class="social-networks">
+
+        <div class="social-container">
+            <a href="#" class="social-rectangle">
+                <i class="fa fa-facebook"></i>
+            </a>
+
+
+            <a href="#" class="social-rectangle">
+                <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href="#" target="_blank" class="social-rectangle">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <a href="#" target="_blank" class="social-rectangle">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+            <a href="#" target="_blank" class="social-rectangle">
+                <i class="fa fa-github"></i>
+            </a>
+
+        </div>
+    </footer>
 </body>
+
 </html>
