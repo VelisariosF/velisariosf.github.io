@@ -232,9 +232,9 @@ nav .nav-ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -250,17 +250,17 @@ nav .nav-ul li a:hover {
 }
 
 .about-me-main-section .bio-container .info-container .info-description {
-  margin-right: 4em;
-  margin-left: 4em;
   font-family: 'Roboto', sans-serif;
 }
 
 .about-me-main-section .bio-container .info-container .description-1 {
   font-weight: 700;
+  font-size: 1.2em;
 }
 
 .about-me-main-section .bio-container .info-container .description-2 {
   font-weight: 400;
+  color: gray;
 }
 
 .about-me-main-section .bio-container .info-container .bio-container {
@@ -334,7 +334,7 @@ nav .nav-ul li a:hover {
   -ms-grid-column-align: center;
       justify-self: center;
   font-family: "Roboto", sans-serif;
-  color: #CCA33D;
+  color: #ffffff;
   width: auto;
   height: 2em;
   margin-bottom: 0em;
@@ -542,6 +542,7 @@ nav .nav-ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
 }
 
 .services-section .services-container .direction-l .desc,
@@ -729,26 +730,31 @@ nav .nav-ul li a:hover {
 
 .resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .skill-level {
   background-color: #CCA33D;
+  padding-left: 2%;
 }
 
 .resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .java {
-  width: 70%;
-}
-
-.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .html_css {
   width: 85%;
 }
 
-.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .javascript {
-  width: 50%;
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .html_css {
+  width: 90%;
 }
 
-.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .sql {
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .javascript {
+  width: 75%;
+}
+
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .react_js {
   width: 60%;
 }
 
+.resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .sql {
+  width: 80%;
+}
+
 .resume-container .level-of-knowledge-container .level-container .skills-container .skill-bar-container .bar .php {
-  width: 40%;
+  width: 60%;
 }
 
 .portofolio-page-container {
@@ -975,9 +981,10 @@ nav .nav-ul li a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
 }
 
 .contact-section .contact-section-container .contact-container {
@@ -1044,10 +1051,13 @@ nav .nav-ul li a:hover {
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input {
+  font-size: 1.02em;
   border-radius: 10px;
   background-color: #323232;
+  padding-left: 5%;
   width: 98.5%;
   border: none;
+  color: white;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input:focus {
@@ -1056,22 +1066,22 @@ nav .nav-ul li a:hover {
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input::-webkit-input-placeholder {
-  color: #666;
+  color: #848484;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input:-ms-input-placeholder {
-  color: #666;
+  color: #848484;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input::-ms-input-placeholder {
-  color: #666;
+  color: #848484;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row .form-attribute .form-input::placeholder {
-  color: #666;
+  color: #848484;
   font-family: "Varela", sans-serif;
 }
 
@@ -1080,13 +1090,15 @@ nav .nav-ul li a:hover {
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject {
+  font-size: 1.02em;
+  padding-left: 5%;
   background-color: #323232;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   resize: none;
-  width: 180%;
+  width: 222%;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject:focus {
@@ -1095,25 +1107,25 @@ nav .nav-ul li a:hover {
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject::-webkit-input-placeholder {
-  color: #666;
+  color: #848484;
   letter-spacing: 0.1em;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject:-ms-input-placeholder {
-  color: #666;
+  color: #848484;
   letter-spacing: 0.1em;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject::-ms-input-placeholder {
-  color: #666;
+  color: #848484;
   letter-spacing: 0.1em;
   font-family: "Varela", sans-serif;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject::placeholder {
-  color: #666;
+  color: #848484;
   letter-spacing: 0.1em;
   font-family: "Varela", sans-serif;
 }

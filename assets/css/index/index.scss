@@ -224,7 +224,7 @@ nav {
             width: 40em;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: flex-start;
 
             .info-title {
@@ -237,18 +237,21 @@ nav {
 
             .info-description {
 
-                margin-right: 4em;
-                margin-left: 4em;
+             //   margin-right: 4em;
+              //  margin-left: 4em;
                 font-family: 'Roboto', sans-serif;
 
             }
 
             .description-1 {
                 font-weight: 700;
+                font-size: 1.2em;
             }
 
             .description-2 {
                 font-weight: 400;
+              
+                color: gray;
             }
 
             .bio-container {
@@ -331,7 +334,7 @@ nav {
         grid-area: "header";
         justify-self: center;
         font-family: "Roboto", sans-serif;
-        color: #CCA33D;
+        color: #ffffff;
         width: auto;
         height: 2em;
         margin-bottom: 0em;
@@ -537,6 +540,7 @@ nav {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
+                text-align: left;
 
 
             }
@@ -687,28 +691,31 @@ nav {
                         .skill-level {
 
                             background-color: #CCA33D;
-
-
+                            padding-left: 2%;
                         }
 
                         .java {
-                            width: 70%;
-                        }
-
-                        .html_css {
                             width: 85%;
                         }
 
-                        .javascript {
-                            width: 50%;
+                        .html_css {
+                            width: 90%;
                         }
 
-                        .sql {
+                        .javascript {
+                            width: 75%;
+                        }
+
+                        .react_js{
                             width: 60%;
                         }
 
+                        .sql {
+                            width: 80%;
+                        }
+
                         .php {
-                            width: 40%;
+                            width: 60%;
                         }
 
                     }
@@ -910,8 +917,8 @@ nav {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
-
+        justify-content: space-between;
+        width: 60%;
         .contact-container {
             display: flex;
             flex-direction: column;
@@ -948,19 +955,20 @@ nav {
                         margin-bottom: 3%;
 
                         .form-input {
+                            font-size: 1.02em;
                             border-radius: 10px;
                             background-color: rgb(50, 50, 50);
-
+ padding-left: 5%;
                             width: 98.5%;
                             border: none;
-
+color: white;
                             &:focus {
                                 outline: 0;
                                 border-bottom: 1px solid #CCA33D;
                             }
 
                             &::placeholder {
-                                color: #666;
+                                color: rgb(132, 132, 132);
                                 font-family: "Varela", sans-serif;
 
                             }
@@ -978,13 +986,15 @@ nav {
 
 
                         .form-input-subject {
+                            font-size: 1.02em;
+                            padding-left: 5%;
                             background-color: rgb(50, 50, 50);
                             border-radius: 10px;
                             box-sizing: border-box;
                             border: none;
                             resize: none;
 
-                            width: 180%;
+                            width: 222%;
 
 
                             &:focus {
@@ -993,7 +1003,7 @@ nav {
                             }
 
                             &::placeholder {
-                                color: #666;
+                                color: rgb(132, 132, 132);
                                 letter-spacing: 0.1em;
                                 font-family: "Varela", sans-serif;
                             }
