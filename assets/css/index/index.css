@@ -1099,6 +1099,7 @@ nav .nav-ul li a:hover {
   border: none;
   resize: none;
   width: 222%;
+  color: white;
 }
 
 .contact-section .contact-section-container .contact-container .contact-form-container .row_3 .form-subject .form-input-subject:focus {

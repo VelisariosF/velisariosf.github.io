@@ -5,7 +5,7 @@
   }*/
 * {
     font-family: 'Roboto' sans-serif;
-    
+
 }
 
 
@@ -237,8 +237,8 @@ nav {
 
             .info-description {
 
-             //   margin-right: 4em;
-              //  margin-left: 4em;
+                //   margin-right: 4em;
+                //  margin-left: 4em;
                 font-family: 'Roboto', sans-serif;
 
             }
@@ -250,7 +250,7 @@ nav {
 
             .description-2 {
                 font-weight: 400;
-              
+
                 color: gray;
             }
 
@@ -706,7 +706,7 @@ nav {
                             width: 75%;
                         }
 
-                        .react_js{
+                        .react_js {
                             width: 60%;
                         }
 
@@ -919,6 +919,7 @@ nav {
         align-items: flex-start;
         justify-content: space-between;
         width: 60%;
+
         .contact-container {
             display: flex;
             flex-direction: column;
@@ -958,10 +959,11 @@ nav {
                             font-size: 1.02em;
                             border-radius: 10px;
                             background-color: rgb(50, 50, 50);
- padding-left: 5%;
+                            padding-left: 5%;
                             width: 98.5%;
                             border: none;
-color: white;
+                            color: white;
+
                             &:focus {
                                 outline: 0;
                                 border-bottom: 1px solid #CCA33D;
@@ -995,7 +997,7 @@ color: white;
                             resize: none;
 
                             width: 222%;
-
+                            color: white;
 
                             &:focus {
                                 outline: 0;
@@ -1019,7 +1021,7 @@ color: white;
                         -webkit-transition: background-color 0.2s ease-out;
                         border: none;
                         width: 100%;
-                       border-radius: 25px;
+                        border-radius: 25px;
                         color: white;
                         padding: 0.6em 1.2em;
                         text-align: center;
@@ -1041,7 +1043,7 @@ color: white;
         }
 
         .contact-info-container {
-        
+
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -1058,47 +1060,49 @@ color: white;
             }
 
             .contact-form-elements-container {
-               display: flex;
-               flex-direction: column;
-               align-items: flex-start;
-               justify-content: flex-start;
-              
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
 
-               .row{
-                   display: flex;
-                   flex-direction: row;
-                   align-items: flex-start;
-                   justify-content: flex-start;
-                   .contact-form-element{
-                
+
+                .row {
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: flex-start;
-                    height: 20vh;
-                    width: 15vw;
-                    svg{
-                        width: 40px;
-                        height: 40px;
-                    }
- 
-                    .text-container{
-                        font-size: small;
-                        border-left: 1px solid rgb(112, 112, 112);
+
+                    .contact-form-element {
+
                         display: flex;
-                        padding-left: 10%;
-                        flex-direction: column;
-                        align-items:baseline;
-                        justify-items:center;
-                        
-                        p{
-                            color: gray;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        height: 20vh;
+                        width: 15vw;
+
+                        svg {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        .text-container {
+                            font-size: small;
+                            border-left: 1px solid rgb(112, 112, 112);
+                            display: flex;
+                            padding-left: 10%;
+                            flex-direction: column;
+                            align-items: baseline;
+                            justify-items: center;
+
+                            p {
+                                color: gray;
+                            }
                         }
                     }
                 }
-               }
-  
-               
+
+
             }
         }
     }
