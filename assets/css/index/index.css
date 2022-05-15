@@ -948,6 +948,52 @@ nav .nav-ul li a:hover {
   background-position: 30%;
 }
 
+.portofolio-page-container .projects-section .projects-container .row .e_learning {
+  background-image: url("/assets/images/portofolio_projects/e_learning.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .e_learning:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/e_learning.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/e_learning.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .quizzical {
+  background-image: url("/assets/images/portofolio_projects/quizzical.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .quizzical:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/quizzical.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/quizzical.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .tic_tac_toe {
+  background-image: url("/assets/images/portofolio_projects/tic_tac_toe.png");
+}
+
+.portofolio-page-container .projects-section .projects-container .row .tic_tac_toe:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/portofolio_projects/tic_tac_toe.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/tic_tac_toe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .more {
+  background-color: #5a5a5a;
+}
+
+.portofolio-page-container .projects-section .projects-container .row .more:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
 .contact-section {
   display: -webkit-box;
   display: -ms-flexbox;

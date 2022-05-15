@@ -894,6 +894,54 @@ nav {
 
                     }
                 }
+
+                .e_learning{
+                    background-image: url("/assets/images/portofolio_projects/e_learning.png");
+
+                    &:hover {
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/e_learning.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30%;
+
+                    }
+                }
+
+                .quizzical{
+                    background-image: url("/assets/images/portofolio_projects/quizzical.png");
+
+                    &:hover {
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/quizzical.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30%;
+
+                    }
+                }
+
+                .tic_tac_toe{
+                    background-image: url("/assets/images/portofolio_projects/tic_tac_toe.png");
+
+                    &:hover {
+                        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/portofolio_projects/tic_tac_toe.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30%;
+
+                    }
+                }
+
+                .more{
+                    background-color: rgb(90, 90, 90);
+
+                    &:hover {
+                      
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 30%;
+
+                    }
+                }
             }
 
         }
