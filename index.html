@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Question</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 100%);
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d63384;
+            margin-bottom: 50px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .button-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #noButton {
+            padding: 30px 80px;
+            font-size: 2rem;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        #noButton:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        #noButton:active {
+            transform: scale(0.98);
+        }
+
+        #yesButton {
+            position: absolute;
+            padding: 12px 30px;
+            font-size: 1rem;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -180px);
+        }
+
+        #yesButton:hover {
+            transform: translate(-50%, -180px) scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my valentine?</h1>
+    
+    <div class="button-container">
+        <button id="noButton">No</button>
+        <button id="yesButton">Yes</button>
+    </div>
+
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const container = document.querySelector('.button-container');
+
+        yesButton.addEventListener('mouseenter', moveButton);
+        yesButton.addEventListener('touchstart', moveButton);
+
+        function moveButton(e) {
+            e.preventDefault();
+            
+            const containerRect = container.getBoundingClientRect();
+            const buttonRect = yesButton.getBoundingClientRect();
+            
+            // Generate random position within the container
+            const maxX = containerRect.width - buttonRect.width;
+            const maxY = containerRect.height - buttonRect.height;
+            
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            
+            // Position the button absolutely within the container
+            yesButton.style.left = randomX + 'px';
+            yesButton.style.top = randomY + 'px';
+            yesButton.style.transform = 'none';
+        }
+
+        // Optional: Add click handlers
+        document.getElementById('noButton').addEventListener('click', function() {
+            alert('Great choice! 💝');
+        });
+
+        yesButton.addEventListener('click', function() {
+            alert('Yay! Caught me! 💕');
+        });
+    </script>
+</body>
+</html>
